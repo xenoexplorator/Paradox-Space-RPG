@@ -1,5 +1,7 @@
 wip/*
 *.aux
+*.fdb_latexmk
+*.fls
 *.log
 *.pdf
 *.toc
