@@ -8,6 +8,7 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{geometry}
 \RequirePackage{graphicx}
+\RequirePackage{makeidx}
 \RequirePackage{txfonts}
 \RequirePackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \RequirePackage{xcolor}
@@ -21,6 +22,7 @@
 }
 
 \graphicspath{{./img/}}
+\makeindex
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Lexicon
@@ -30,9 +32,13 @@
 \newcommand*{\TN}{Success Threshold}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Content and structure
+
+\newcommand*{\gameterm}[1]{\index{#1}\emph{#1}} % TODO add to index
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Glyphs and icons
 
-\newcommand*{\gameterm}[1]{\emph{#1}}
 \newcommand*{\spade}{$\spadesuit$}
 \newcommand*{\heart}{\textcolor{red}{$\varheartsuit$}}
 \renewcommand*{\diamond}{\textcolor{red}{$\Diamondblack$}}
